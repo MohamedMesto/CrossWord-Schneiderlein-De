@@ -1,0 +1,1622 @@
+<?xml version="1.0"?>
+       <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "xhtml11.dtd">
+       <html xmlns="http://www.w3.org/1999/xhtml"
+             xml:lang="en"><head><meta name="author" content="Created with Hot Potatoes by Half-Baked Software, registered to mmm."></meta><meta name="keywords" content="Hot Potatoes, Hot Potatoes, Half-Baked Software, Windows, University of Victoria"></meta>
+
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<meta name="DC:Creator" content="mmm" />
+<meta name="DC:Title" content="Schneiderlein" />
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+
+<title>
+Schneiderlein
+</title>
+
+<!-- Made with executable version 6.3 Release 0 Build 5 -->
+
+<!-- The following insertion allows you to add your own code directly to this head tag from the configuration screen -->
+
+
+
+<style type="text/css">
+
+
+/* This is the CSS stylesheet used in the exercise. */
+/* Elements in square brackets are replaced by data based on configuration settings when the exercise is built. */
+
+/* BeginCorePageCSS */
+
+/* Made with executable version 6.3 Release 0 Build 5 */
+
+
+/* Hack to hide a nested Quicktime player from IE, which can't handle it. */
+* html object.MediaPlayerNotForIE {
+	display: none;
+}
+
+body{
+	font-family: Geneva,Arial,sans-serif;
+	background-color: #C0C0C0;
+	color: #000000;
+ 
+	margin-right: 5%;
+	margin-left: 5%;
+	font-size: small;
+}
+
+p{
+	text-align: left;
+	margin: 0px;
+	font-size: 100%;
+}
+
+table,div,span,td{
+	font-size: 100%;
+	color: #000000;
+}
+
+div.Titles{
+	padding: 0.5em;;
+	text-align: center;
+	color: #000000;
+}
+
+button{
+	font-family: Geneva,Arial,sans-serif;
+	font-size: 100%;
+	display: inline;
+}
+
+.ExerciseTitle{
+	font-size: 140%;
+	color: #000000;
+}
+
+.ExerciseSubtitle{
+	font-size: 120%;
+	color: #000000;
+}
+
+div.StdDiv{
+	background-color: #FFFFFF;
+	text-align: center;
+	font-size: 100%;
+	color: #000000;
+	padding: 0.5em;
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+	border-color: #000000;
+	margin-bottom: 1px;
+}
+
+/* EndCorePageCSS */
+
+.RTLText{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", Geneva,Arial,sans-serif; 
+}
+
+.CentredRTLText{
+	text-align: center;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", Geneva,Arial,sans-serif; 
+}
+
+button p.RTLText{
+	text-align: center;
+}
+
+.RTLGapBox{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Times New Roman", Geneva,Arial,sans-serif;
+}
+
+.Guess{
+	font-weight: bold;
+}
+
+.CorrectAnswer{
+	font-weight: bold;
+}
+
+div#Timer{
+	padding: 0.25em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #000000;
+}
+
+span#TimerText{
+	padding: 0.25em;
+	border-width: 1px;
+	border-style: solid;
+	font-weight: bold;
+	display: none;
+	color: #000000;
+}
+
+span.Instructions{
+
+}
+
+div.ExerciseText{
+
+}
+
+.FeedbackText, .FeedbackText span.CorrectAnswer, .FeedbackText span.Guess, .FeedbackText span.Answer{
+	color: #000000;
+}
+
+.LeftItem{
+	font-size: 100%;
+	color: #000000;
+	text-align: left;
+}
+
+.RightItem{
+	font-weight: bold;
+	font-size: 100%;
+	color: #000000;
+}
+
+span.CorrectMark{
+
+}
+
+input, textarea{
+	font-family: Geneva,Arial,sans-serif;
+	font-size: 120%;
+}
+
+select{
+	font-size: 100%;
+}
+
+div.Feedback {
+	background-color: #C0C0C0;
+	left: 33%;
+	width: 34%;
+	top: 33%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: 100%;
+}
+
+
+
+
+div.ExerciseDiv{
+	color: #000000;
+}
+
+/* JMatch flashcard styles */
+table.FlashcardTable{
+	background-color: transparent;
+	color: #000000;
+	border-color: #000000;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	width: 90%;
+	position: relative;
+	text-align: center;
+	padding: 0px;
+}
+
+table.FlashcardTable tr{
+	border-style: none;
+	margin: 0px;
+	padding: 0px;
+	background-color: #FFFFFF;
+}
+
+table.FlashcardTable td.Showing{
+	font-size: 140%;
+	text-align: center;
+	width: 50%;
+	display: table-cell;
+	padding: 2em;
+	margin: 0px;
+	border-style: solid;
+	border-width: 1px;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+
+table.FlashcardTable td.Hidden{
+	display: none;
+}
+
+/* JMix styles */
+div#SegmentDiv{
+	margin-top: 2em;
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+a.ExSegment{
+	font-size: 120%;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+}
+
+span.RemainingWordList{
+	font-style: italic;
+}
+
+div.DropLine {
+	position: absolute;
+	text-align: center;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	width: 80%;
+}
+
+/* JCloze styles */
+
+.ClozeWordList{
+	text-align: center;
+	font-weight: bold;
+}
+
+div.ClozeBody{
+	text-align: left;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	line-height: 2.0
+}
+
+span.GapSpan{
+	font-weight: bold;
+}
+
+/* JCross styles */
+
+table.CrosswordGrid{
+	margin: auto auto 1em auto;
+	border-collapse: collapse;
+	padding: 0px;
+	background-color: #000000;
+}
+
+table.CrosswordGrid tbody tr td{
+	width: 1.5em;
+	height: 1.5em;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 140%;
+	padding: 1px;
+	margin: 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	color: #000000;
+}
+
+table.CrosswordGrid span{
+	color: #000000;
+}
+
+table.CrosswordGrid td.BlankCell{
+	background-color: #000000;
+	color: #000000;
+}
+
+table.CrosswordGrid td.LetterOnlyCell{
+	text-align: center;
+	vertical-align: middle;
+	background-color: #ffffff;
+	color: #000000;
+	font-weight: bold;
+}
+
+table.CrosswordGrid td.NumLetterCell{
+	text-align: left;
+	vertical-align: top;
+	background-color: #ffffff;
+	color: #000000;
+	padding: 1px;
+	font-weight: bold;
+}
+
+.NumLetterCellText{
+	cursor: pointer;
+	color: #000000;
+}
+
+.GridNum{
+	vertical-align: super;
+	font-size: 66%;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+}
+
+.GridNum:hover, .GridNum:visited{
+	color: #000000;
+}
+
+table#Clues{
+	margin: auto;
+	vertical-align: top;
+}
+
+table#Clues td{
+	vertical-align: top;
+}
+
+table.ClueList{
+  margin: auto;
+}
+
+td.ClueNum{
+	text-align: right;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+td.Clue{
+	text-align: left;
+}
+
+div#ClueEntry{
+	text-align: left;
+	margin-bottom: 1em;
+}
+
+/* Keypad styles */
+
+div.Keypad{
+	text-align: center;
+	display: none; /* initially hidden, shown if needed */
+	margin-bottom: 0.5em;
+}
+
+div.Keypad button{
+	font-family: Geneva,Arial,sans-serif;
+	font-size: 120%;
+	background-color: #ffffff;
+	color: #000000;
+	width: 2em;
+}
+
+/* JQuiz styles */
+
+div.QuestionNavigation{
+	text-align: center;
+}
+
+.QNum{
+	margin: 0em 1em 0.5em 1em;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+textarea{
+	font-family: Geneva,Arial,sans-serif;
+}
+
+.QuestionText{
+	text-align: left;
+	margin: 0px;
+	font-size: 100%;
+}
+
+.Answer{
+	font-size: 120%;
+	letter-spacing: 0.1em;
+}
+
+.PartialAnswer{
+	font-size: 120%;
+	letter-spacing: 0.1em;
+	color: #000000;
+}
+
+.Highlight{
+	color: #000000;
+	background-color: #ffff00;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+ol.QuizQuestions{
+	text-align: left;
+	list-style-type: none;
+}
+
+li.QuizQuestion{
+	padding: 1em;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+}
+
+ol.MCAnswers{
+	text-align: left;
+	list-style-type: upper-alpha;
+	padding: 1em;
+}
+
+ol.MCAnswers li{
+	margin-bottom: 1em;
+}
+
+ol.MSelAnswers{
+	text-align: left;
+	list-style-type: lower-alpha;
+	padding: 1em;
+}
+
+div.ShortAnswer{
+	padding: 1em;
+}
+
+.FuncButton {
+	text-align: center;
+	border-style: solid;
+
+	border-left-color: #ffffff;
+	border-top-color: #ffffff;
+	border-right-color: #7f7f7f;
+	border-bottom-color: #7f7f7f;
+	color: #000000;
+	background-color: #FFFFFF;
+
+	border-width: 2px;
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+}
+
+.FuncButtonUp {
+	color: #FFFFFF;
+	text-align: center;
+	border-style: solid;
+
+	border-left-color: #ffffff;
+	border-top-color: #ffffff;
+	border-right-color: #7f7f7f;
+	border-bottom-color: #7f7f7f;
+
+	background-color: #000000;
+	color: #FFFFFF;
+	border-width: 2px;
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+}
+
+.FuncButtonDown {
+	color: #FFFFFF;
+	text-align: center;
+	border-style: solid;
+
+	border-left-color: #7f7f7f;
+	border-top-color: #7f7f7f;
+	border-right-color: #ffffff;
+	border-bottom-color: #ffffff;
+	background-color: #000000;
+	color: #FFFFFF;
+
+	border-width: 2px;
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+}
+
+/*BeginNavBarStyle*/
+
+div.NavButtonBar{
+	background-color: #0000ff;
+	text-align: center;
+	margin: 2px 0px 2px 0px;
+	clear: both;
+	font-size: 100%;
+}
+
+.NavButton {
+	border-style: solid;
+	
+	border-left-color: #7f7fff;
+	border-top-color: #7f7fff;
+	border-right-color: #00007f;
+	border-bottom-color: #00007f;
+	background-color: #0000ff;
+	color: #ffffff;
+
+	border-width: 2px;
+	cursor: pointer;	
+}
+
+.NavButtonUp {
+	border-style: solid;
+
+	border-left-color: #7f7fff;
+	border-top-color: #7f7fff;
+	border-right-color: #00007f;
+	border-bottom-color: #00007f;
+	color: #0000ff;
+	background-color: #ffffff;
+
+	border-width: 2px;
+	cursor: pointer;	
+}
+
+.NavButtonDown {
+	border-style: solid;
+
+	border-left-color: #00007f;
+	border-top-color: #00007f;
+	border-right-color: #7f7fff;
+	border-bottom-color: #7f7fff;
+	color: #0000ff;
+	background-color: #ffffff;
+
+	border-width: 2px;
+	cursor: pointer;	
+}
+
+/*EndNavBarStyle*/
+
+a{
+	color: #0000FF;
+}
+
+a:visited{
+	color: #0000CC;
+}
+
+a:hover{
+	color: #0000FF;
+}
+
+div.CardStyle {
+	position: absolute;
+	font-family: Geneva,Arial,sans-serif;
+	font-size: 100%;
+	padding: 5px;
+	border-style: solid;
+	border-width: 1px;
+	color: #000000;
+	background-color: #FFFFFF;
+	left: -50px;
+	top: -50px;
+	overflow: visible;
+}
+
+.rtl{
+	text-align: right;
+	font-size: 140%;
+}
+
+
+</style>
+
+<script type="text/javascript">
+
+//<![CDATA[
+
+<!--
+
+
+
+
+function Client(){
+//if not a DOM browser, hopeless
+	this.min = false; if (document.getElementById){this.min = true;};
+
+	this.ua = navigator.userAgent;
+	this.name = navigator.appName;
+	this.ver = navigator.appVersion;  
+
+//Get data about the browser
+	this.mac = (this.ver.indexOf('Mac') != -1);
+	this.win = (this.ver.indexOf('Windows') != -1);
+
+//Look for Gecko
+	this.gecko = (this.ua.indexOf('Gecko') > 1);
+	if (this.gecko){
+		this.geckoVer = parseInt(this.ua.substring(this.ua.indexOf('Gecko')+6, this.ua.length));
+//		if (this.geckoVer < 20020000){this.min = false;}
+	}
+	
+//Look for Firebird
+	this.firebird = (this.ua.indexOf('Firebird') > 1);
+	
+//Look for Safari
+	this.safari = (this.ua.indexOf('Safari') > 1);
+	if (this.safari){
+		this.gecko = false;
+	}
+	
+//Look for IE
+	this.ie = (this.ua.indexOf('MSIE') > 0);
+	if (this.ie){
+		this.ieVer = parseFloat(this.ua.substring(this.ua.indexOf('MSIE')+5, this.ua.length));
+		if (this.ieVer < 5.5){this.min = false;}
+	}
+	
+//Look for Opera
+	this.opera = (this.ua.indexOf('Opera') > 0);
+	if (this.opera){
+		this.operaVer = parseFloat(this.ua.substring(this.ua.indexOf('Opera')+6, this.ua.length));
+		if (this.operaVer < 7.04){this.min = false;}
+	}
+	if (this.min == false){
+//		alert('Your browser may not be able to handle this page.');
+	}
+	
+//Special case for the horrible ie5mac
+	this.ie5mac = (this.ie&&this.mac&&(this.ieVer<6));
+}
+
+var C = new Client();
+
+//for (prop in C){
+//	alert(prop + ': ' + C[prop]);
+//}
+
+
+
+//CODE FOR HANDLING NAV BUTTONS AND FUNCTION BUTTONS
+
+//[strNavBarJS]
+function NavBtnOver(Btn){
+	if (Btn.className != 'NavButtonDown'){Btn.className = 'NavButtonUp';}
+}
+
+function NavBtnOut(Btn){
+	Btn.className = 'NavButton';
+}
+
+function NavBtnDown(Btn){
+	Btn.className = 'NavButtonDown';
+}
+//[/strNavBarJS]
+
+function FuncBtnOver(Btn){
+	if (Btn.className != 'FuncButtonDown'){Btn.className = 'FuncButtonUp';}
+}
+
+function FuncBtnOut(Btn){
+	Btn.className = 'FuncButton';
+}
+
+function FuncBtnDown(Btn){
+	Btn.className = 'FuncButtonDown';
+}
+
+function FocusAButton(){
+	if (document.getElementById('CheckButton1') != null){
+		document.getElementById('CheckButton1').focus();
+	}
+	else{
+		if (document.getElementById('CheckButton2') != null){
+			document.getElementById('CheckButton2').focus();
+		}
+		else{
+			document.getElementsByTagName('button')[0].focus();
+		}
+	}
+}
+
+
+
+
+//CODE FOR HANDLING DISPLAY OF POPUP FEEDBACK BOX
+
+var topZ = 1000;
+
+function ShowMessage(Feedback){
+	var Output = Feedback + '<br /><br />';
+	document.getElementById('FeedbackContent').innerHTML = Output;
+	var FDiv = document.getElementById('FeedbackDiv');
+	topZ++;
+	FDiv.style.zIndex = topZ;
+	FDiv.style.top = TopSettingWithScrollOffset(30) + 'px';
+
+	FDiv.style.display = 'block';
+
+	ShowElements(false, 'input');
+	ShowElements(false, 'select');
+	ShowElements(false, 'object');
+	ShowElements(true, 'object', 'FeedbackContent');
+
+//Focus the OK button
+	setTimeout("document.getElementById('FeedbackOKButton').focus()", 50);
+	
+//
+}
+
+function ShowElements(Show, TagName, ContainerToReverse){
+// added third argument to allow objects in the feedback box to appear
+//IE bug -- hide all the form elements that will show through the popup
+//FF on Mac bug : doesn't redisplay objects whose visibility is set to visible
+//unless the object's display property is changed
+
+	//get container object (by Id passed in, or use document otherwise)
+	TopNode = document.getElementById(ContainerToReverse);
+	var Els;
+	if (TopNode != null) {
+		Els = TopNode.getElementsByTagName(TagName);
+	} else {
+		Els = document.getElementsByTagName(TagName);
+	}
+
+	for (var i=0; i<Els.length; i++){
+		if (TagName == "object") {
+			//manipulate object elements in all browsers
+			if (Show == true){
+				Els[i].style.visibility = 'visible';
+				//get Mac FireFox to manipulate display, to force screen redraw
+				if (C.mac && C.gecko) {Els[i].style.display = '';}
+			}
+			else{
+				Els[i].style.visibility = 'hidden';
+				if (C.mac && C.gecko) {Els[i].style.display = 'none';}
+			}
+		} 
+		else {
+			// tagName is either input or select (that is, Form Elements)
+			// ie6 has a problem with Form elements, so manipulate those
+			if (C.ie) {
+				if (C.ieVer < 7) {
+					if (Show == true){
+						Els[i].style.visibility = 'visible';
+					}
+					else{
+						Els[i].style.visibility = 'hidden';
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+function HideFeedback(){
+	document.getElementById('FeedbackDiv').style.display = 'none';
+	ShowElements(true, 'input');
+	ShowElements(true, 'select');
+	ShowElements(true, 'object');
+	if (Finished == true){
+		Finish();
+	}
+}
+
+
+//GENERAL UTILITY FUNCTIONS AND VARIABLES
+
+//PAGE DIMENSION FUNCTIONS
+function PageDim(){
+//Get the page width and height
+	this.W = 600;
+	this.H = 400;
+	this.W = document.getElementsByTagName('body')[0].clientWidth;
+	this.H = document.getElementsByTagName('body')[0].clientHeight;
+}
+
+var pg = null;
+
+function GetPageXY(El) {
+	var XY = {x: 0, y: 0};
+	while(El){
+		XY.x += El.offsetLeft;
+		XY.y += El.offsetTop;
+		El = El.offsetParent;
+	}
+	return XY;
+}
+
+function GetScrollTop(){
+	if (typeof(window.pageYOffset) == 'number'){
+		return window.pageYOffset;
+	}
+	else{
+		if ((document.body)&&(document.body.scrollTop)){
+			return document.body.scrollTop;
+		}
+		else{
+			if ((document.documentElement)&&(document.documentElement.scrollTop)){
+				return document.documentElement.scrollTop;
+			}
+			else{
+				return 0;
+			}
+		}
+	}
+}
+
+function GetViewportHeight(){
+	if (typeof window.innerHeight != 'undefined'){
+		return window.innerHeight;
+	}
+	else{
+		if (((typeof document.documentElement != 'undefined')&&(typeof document.documentElement.clientHeight !=
+     'undefined'))&&(document.documentElement.clientHeight != 0)){
+			return document.documentElement.clientHeight;
+		}
+		else{
+			return document.getElementsByTagName('body')[0].clientHeight;
+		}
+	}
+}
+
+function TopSettingWithScrollOffset(TopPercent){
+	var T = Math.floor(GetViewportHeight() * (TopPercent/100));
+	return GetScrollTop() + T; 
+}
+
+//CODE FOR AVOIDING LOSS OF DATA WHEN BACKSPACE KEY INVOKES history.back()
+var InTextBox = false;
+
+function SuppressBackspace(e){ 
+	if (InTextBox == true){return;}
+	if (C.ie) {
+		thisKey = window.event.keyCode;
+	}
+	else {
+		thisKey = e.keyCode;
+	}
+
+	var Suppress = false;
+
+	if (thisKey == 8) {
+		Suppress = true;
+	}
+
+	if (Suppress == true){
+		if (C.ie){
+			window.event.returnValue = false;	
+			window.event.cancelBubble = true;
+		}
+		else{
+			e.preventDefault();
+		}
+	}
+}
+
+if (C.ie){
+	document.attachEvent('onkeydown',SuppressBackspace);
+	window.attachEvent('onkeydown',SuppressBackspace);
+}
+else{
+	if (window.addEventListener){
+		window.addEventListener('keypress',SuppressBackspace,false);
+	}
+}
+
+function ReduceItems(InArray, ReduceToSize){
+	var ItemToDump=0;
+	var j=0;
+	while (InArray.length > ReduceToSize){
+		ItemToDump = Math.floor(InArray.length*Math.random());
+		InArray.splice(ItemToDump, 1);
+	}
+}
+
+function Shuffle(InArray){
+	var Num;
+	var Temp = new Array();
+	var Len = InArray.length;
+
+	var j = Len;
+
+	for (var i=0; i<Len; i++){
+		Temp[i] = InArray[i];
+	}
+
+	for (i=0; i<Len; i++){
+		Num = Math.floor(j  *  Math.random());
+		InArray[i] = Temp[Num];
+
+		for (var k=Num; k < (j-1); k++) {
+			Temp[k] = Temp[k+1];
+		}
+		j--;
+	}
+	return InArray;
+}
+
+function WriteToInstructions(Feedback) {
+	document.getElementById('InstructionsDiv').innerHTML = Feedback;
+
+}
+
+
+
+
+function EscapeDoubleQuotes(InString){
+	return InString.replace(/"/g, '&quot;')
+}
+
+function TrimString(InString){
+        var x = 0;
+
+        if (InString.length != 0) {
+                while ((InString.charAt(InString.length - 1) == '\u0020') || (InString.charAt(InString.length - 1) == '\u000A') || (InString.charAt(InString.length - 1) == '\u000D')){
+                        InString = InString.substring(0, InString.length - 1)
+                }
+
+                while ((InString.charAt(0) == '\u0020') || (InString.charAt(0) == '\u000A') || (InString.charAt(0) == '\u000D')){
+                        InString = InString.substring(1, InString.length)
+                }
+
+                while (InString.indexOf('  ') != -1) {
+                        x = InString.indexOf('  ')
+                        InString = InString.substring(0, x) + InString.substring(x+1, InString.length)
+                 }
+
+                return InString;
+        }
+
+        else {
+                return '';
+        }
+}
+
+function FindLongest(InArray){
+	if (InArray.length < 1){return -1;}
+
+	var Longest = 0;
+	for (var i=1; i<InArray.length; i++){
+		if (InArray[i].length > InArray[Longest].length){
+			Longest = i;
+		}
+	}
+	return Longest;
+}
+
+//UNICODE CHARACTER FUNCTIONS
+function IsCombiningDiacritic(CharNum){
+	var Result = (((CharNum >= 0x0300)&&(CharNum <= 0x370))||((CharNum >= 0x20d0)&&(CharNum <= 0x20ff)));
+	Result = Result || (((CharNum >= 0x3099)&&(CharNum <= 0x309a))||((CharNum >= 0xfe20)&&(CharNum <= 0xfe23)));
+	return Result;
+}
+
+function IsCJK(CharNum){
+	return ((CharNum >= 0x3000)&&(CharNum < 0xd800));
+}
+
+//SETUP FUNCTIONS
+//BROWSER WILL REFILL TEXT BOXES FROM CACHE IF NOT PREVENTED
+function ClearTextBoxes(){
+	var NList = document.getElementsByTagName('input');
+	for (var i=0; i<NList.length; i++){
+		if ((NList[i].id.indexOf('Guess') > -1)||(NList[i].id.indexOf('Gap') > -1)){
+			NList[i].value = '';
+		}
+		if (NList[i].id.indexOf('Chk') > -1){
+			NList[i].checked = '';
+		}
+	}
+}
+
+//EXTENSION TO ARRAY OBJECT
+function Array_IndexOf(Input){
+	var Result = -1;
+	for (var i=0; i<this.length; i++){
+		if (this[i] == Input){
+			Result = i;
+		}
+	}
+	return Result;
+}
+Array.prototype.indexOf = Array_IndexOf;
+
+//IE HAS RENDERING BUG WITH BOTTOM NAVBAR
+function RemoveBottomNavBarForIE(){
+	if ((C.ie)&&(document.getElementById('Reading') != null)){
+		if (document.getElementById('BottomNavBar') != null){
+			document.getElementById('TheBody').removeChild(document.getElementById('BottomNavBar'));
+		}
+	}
+}
+
+
+
+
+//HOTPOTNET-RELATED CODE
+
+var HPNStartTime = (new Date()).getTime();
+var SubmissionTimeout = 30000;
+var Detail = ''; //Global that is used to submit tracking data
+
+function Finish(){
+//If there's a form, fill it out and submit it
+	if (document.store != null){
+		Frm = document.store;
+		Frm.starttime.value = HPNStartTime;
+		Frm.endtime.value = (new Date()).getTime();
+		Frm.mark.value = Score;
+		Frm.detail.value = Detail;
+		Frm.submit();
+	}
+}
+
+
+
+
+//JCROSS CORE JAVASCRIPT CODE
+
+var InGap = false;
+var CurrentBox = null;
+var Feedback = '';
+var AcrossCaption = '';
+var DownCaption = '';
+var Correct = ' Richtig! Gut gemacht.';
+var Incorrect = ' Einige Ihrer Antworten sind falsch. Falsche Felder wurden ausgeblendet.'; 
+var GiveHint = ' Ein korrekter Buchstabe wurde hinzugef&#x00FC;gt.';
+var YourScoreIs = ' Dein Ergebnis ist ...';
+var BuiltGrid = '';
+var BuiltExercise = '';
+var Penalties = 0;
+var Score = 0;
+var InTextBox = false;
+var Locked = false;
+var TimeOver = false;
+var CaseSensitive = false; 
+
+var InputStuff = '<form method="post" action="" onsubmit="return false;"><span class="ClueNum">[strClueNum]: </span>';
+InputStuff += '[strClue] <input onfocus="CurrentBox=this;InTextBox=true;" onblur="InTextBox=false;" id="[strBoxId]" type="edit" size="[strEditSize]" maxlength="[strMaxLength]"></input>';
+InputStuff += '<button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="EnterGuess([strParams])">Enter</button>';
+InputStuff += '<button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="ShowHint([strParams])"> Hinweis..</button>';
+InputStuff += '</form>';
+
+var CurrBoxElement = null;
+var Finished = false;
+
+function StartUp(){
+	RemoveBottomNavBarForIE();
+//Show a keypad if there is one	(added bugfix for 6.0.4.12)
+	if (document.getElementById('CharacterKeypad') != null){
+		document.getElementById('CharacterKeypad').style.display = 'block';
+	}
+
+	
+	AcrossCaption = document.getElementById('CluesAcrossLabel').innerHTML;
+	DownCaption = document.getElementById('CluesDownLabel').innerHTML;
+
+
+
+
+
+	StartTimer();
+
+
+}
+
+function GetAnswerLength(Across,x,y){
+	Result = 0;
+	if (Across == false){
+		while ((x<L.length)&&(L[x][y].length > 0)){
+			Result += L[x][y].length;
+			x++;
+		} 
+		return Result;
+	}
+	else{
+		while ((y<L[x].length)&&(L[x][y].length > 0)){
+			Result += L[x][y].length;
+			y++;
+		} 	
+		return Result;
+	}
+}
+
+function GetEditSize(Across,x,y){
+	var Len = GetAnswerLength(Across,x,y);
+	if (IsCJK(L[x][y].charCodeAt(0))){
+		Len *= 2;
+	}
+	return Len;
+}
+
+function ShowClue(ClueNum,x,y){
+	var Result = '';
+	var Temp;
+	var strParams;
+	var Clue = document.getElementById('Clue_A_' + ClueNum);
+	if (Clue != null){
+		Temp = InputStuff.replace(/\[ClueNum\]/g, ClueNum);
+		Temp = Temp.replace(/\[strClueNum\]/g, AcrossCaption + ' ' + ClueNum);
+		strParams = 'true,' + ClueNum + ',' + x + ',' + y + ',\'[strBoxId]\'';
+		Temp = Temp.replace(/\[strParams\]/g, strParams);
+		Temp = Temp.replace(/\[strBoxId\]/g, 'GA_' + ClueNum + '_' + x + '_' + y);
+		Temp = Temp.replace(/\[strEditSize\]/g, GetEditSize(true,x,y));
+		Temp = Temp.replace(/\[strMaxLength\]/g, GetAnswerLength(true,x,y));
+		Temp = Temp.replace(/\[strClue\]/g, Clue.innerHTML, Temp);
+		Result += Temp;
+	}
+	Clue = document.getElementById('Clue_D_' + ClueNum);
+	if (Clue != null){
+		Temp = InputStuff.replace(/\[ClueNum\]/g, ClueNum);
+		Temp = Temp.replace(/\[strClueNum\]/g, DownCaption + ' ' + ClueNum);
+		strParams = 'false,' + ClueNum + ',' + x + ',' + y + ',\'[strBoxId]\'';
+		Temp = Temp.replace(/\[strParams\]/g, strParams);
+		Temp = Temp.replace(/\[strBoxId\]/g, 'GD_' + ClueNum + '_' + x + '_' + y);
+		Temp = Temp.replace(/\[strEditSize\]/g, GetAnswerLength(false,x,y));
+		Temp = Temp.replace(/\[strClue\]/g, Clue.innerHTML, Temp);
+		Result += Temp;
+	}
+	document.getElementById('ClueEntry').innerHTML = Result;
+}
+
+function EnterGuess(Across,ClueNum,x,y,BoxId){
+	if (document.getElementById(BoxId) != null){
+		var Guess = document.getElementById(BoxId).value;
+		var AnsLength = GetAnswerLength(Across,x,y);
+		EnterAnswer(Guess,Across,AnsLength,x,y);
+	}
+}
+
+function SplitStringToPerceivedChars(InString, PC){
+	var Temp = InString.charAt(0);
+	if (InString.length > 1){
+		for (var i=1; i<InString.length; i++){
+			if (IsCombiningDiacritic(InString.charCodeAt(i)) == true){
+				Temp += InString.charAt(i);
+			}
+			else{
+				PC.push(Temp);
+				Temp = InString.charAt(i);
+			}
+		}
+	}
+	PC.push(Temp);
+}
+
+function EnterAnswer(Guess,Across,AnsLength,x,y){
+	var PC = new Array();
+	SplitStringToPerceivedChars(Guess, PC);
+	
+	var i=x;
+	var j=y;
+	var Letter = 0;
+	while (Letter < AnsLength){
+		if (Letter < PC.length){
+			G[i][j] = PC[Letter];
+			if (document.getElementById('L_' + i + '_' + j) != null){
+				document.getElementById('L_' + i + '_' + j).innerHTML = PC[Letter];
+			}
+		}
+		if (Across == true){
+			j++;
+		}
+		else{
+			i++;
+		}
+		Letter++;
+	}
+}
+
+function SetGridSquareValue(x,y,Val){
+	var GridId = 'L_' + x + '_' + y;
+	if (document.getElementById(GridId) != null){
+		document.getElementById(GridId).innerHTML = Val;
+	}
+}
+
+function ShowHint(Across,ClueNum,x,y,BoxId){
+	var i=x;
+	var j=y;
+	var LetterFromGuess = '';
+	var LetterFromKey = '';
+	var OutString = '';
+	if (Across==true){
+		while (j<L[i].length){
+			if (L[i][j] != ''){
+				OutString += L[i][j];
+				if (CaseSensitive == true){
+					LetterFromKey = L[i][j];
+					LetterFromGuess = G[i][j];
+				}
+				else {
+					LetterFromKey = L[i][j].toUpperCase();
+					LetterFromGuess = G[i][j].toUpperCase();
+				}
+				if (LetterFromGuess != LetterFromKey){
+//				if (G[i][j] != L[i][j]){
+					G[i][j] = L[i][j];
+					Penalties++;
+					break;
+				}
+			}
+			else{
+				break;
+			}
+		j++;
+		}
+	}
+	else{
+		while (i<L.length){
+			if (L[i][j] != ''){
+				OutString += L[i][j];
+				if (CaseSensitive == true){
+					LetterFromKey = L[i][j];
+					LetterFromGuess = G[i][j];
+				}
+				else {
+					LetterFromKey = L[i][j].toUpperCase();
+					LetterFromGuess = G[i][j].toUpperCase();
+				}
+				if (LetterFromGuess != LetterFromKey){
+//				if (G[i][j] != L[i][j]){
+					G[i][j] = L[i][j];
+					Penalties++;
+					break;
+				}
+			}
+			else{
+				break;
+			}
+		i++;
+		}
+	}
+	if (document.getElementById(BoxId) != null){
+		document.getElementById(BoxId).value = OutString;
+	}
+}
+
+L = new Array();
+L[0] = new Array('','','','','','','','','K','R','A','F','T','','','','','','H','');
+L[1] = new Array('','','','O','','','','','\u00D6','','','','','','F','','','','\u00D6','');
+L[2] = new Array('','B','','H','O','F','F','E','N','','S','C','H','W','E','I','N','','H','');
+L[3] = new Array('','R','','R','','','','','I','','','','E','','R','','','','L','');
+L[4] = new Array('V','O','G','E','L','','Z','','G','R','A','M','M','','T','A','P','F','E','R');
+L[5] = new Array('','T','','N','','','W','','I','','','','D','','I','','','','','');
+L[6] = new Array('','','','','','B','E','I','N','','G','','','','G','E','R','U','C','H');
+L[7] = new Array('','','','','','','R','','','','A','','','','','','A','','','');
+L[8] = new Array('J','\u00C4','G','E','R','','G','E','S','A','N','D','T','E','','L','U','F','T','');
+L[9] = new Array('','','','','I','','','','C','','Z','','A','','','','B','','','');
+L[10] = new Array('','','','H','E','L','D','','H','','','','S','','','L','E','I','B','');
+L[11] = new Array('','','','','S','','','','W','','','','C','','A','','N','','','');
+L[12] = new Array('','V','','F','E','N','S','T','E','R','','','H','','X','','','','','G');
+L[13] = new Array('','O','','L','','','T','','R','','','R','E','I','T','E','R','','','I');
+L[14] = new Array('','L','A','I','B','','A','','','','W','','','','','N','','','','P');
+L[15] = new Array('','K','','E','','','D','','','K','A','M','E','R','A','D','','','','F');
+L[16] = new Array('T','','','G','\u00DC','R','T','E','L','','R','','','','','L','A','U','N','E');
+L[17] = new Array('O','','','E','','','','','','','E','','','','','I','','','','L');
+L[18] = new Array('P','F','U','N','D','','','','','','','','','','','C','','','','');
+L[19] = new Array('F','','','','','','','','','','','F','U','R','C','H','T','L','O','S');
+
+
+CL = new Array();
+CL[0] = new Array(0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,2,0);
+CL[1] = new Array(0,0,0,3,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0);
+CL[2] = new Array(0,5,0,6,0,0,0,0,0,0,7,0,8,0,0,0,0,0,0,0);
+CL[3] = new Array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
+CL[4] = new Array(9,0,0,0,0,0,10,0,11,0,0,0,0,0,12,0,0,0,0,0);
+CL[5] = new Array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
+CL[6] = new Array(0,0,0,0,0,13,0,0,0,0,14,0,0,0,15,0,16,0,0,0);
+CL[7] = new Array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
+CL[8] = new Array(17,0,0,0,18,0,19,0,20,0,0,0,21,0,0,22,0,0,0,0);
+CL[9] = new Array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
+CL[10] = new Array(0,0,0,23,0,0,0,0,0,0,0,0,0,0,0,24,0,0,0,0);
+CL[11] = new Array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,0,0,0,0,0);
+CL[12] = new Array(0,26,0,27,0,0,28,0,0,0,0,0,0,0,0,0,0,0,0,29);
+CL[13] = new Array(0,0,0,0,0,0,0,0,0,0,0,30,0,0,0,31,0,0,0,0);
+CL[14] = new Array(0,32,0,0,0,0,0,0,0,0,33,0,0,0,0,0,0,0,0,0);
+CL[15] = new Array(0,0,0,0,0,0,0,0,0,34,0,0,0,0,0,0,0,0,0,0);
+CL[16] = new Array(35,0,0,36,0,0,0,0,0,0,0,0,0,0,0,37,0,0,0,0);
+CL[17] = new Array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
+CL[18] = new Array(38,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
+CL[19] = new Array(0,0,0,0,0,0,0,0,0,0,0,39,0,0,0,0,0,0,0,0);
+
+
+G = new Array();
+G[0] = new Array('','','','','','','','','','','','','','','','','','','','');
+G[1] = new Array('','','','','','','','','','','','','','','','','','','','');
+G[2] = new Array('','','','','','','','','','','','','','','','','','','','');
+G[3] = new Array('','','','','','','','','','','','','','','','','','','','');
+G[4] = new Array('','','','','','','','','','','','','','','','','','','','');
+G[5] = new Array('','','','','','','','','','','','','','','','','','','','');
+G[6] = new Array('','','','','','','','','','','','','','','','','','','','');
+G[7] = new Array('','','','','','','','','','','','','','','','','','','','');
+G[8] = new Array('','','','','','','','','','','','','','','','','','','','');
+G[9] = new Array('','','','','','','','','','','','','','','','','','','','');
+G[10] = new Array('','','','','','','','','','','','','','','','','','','','');
+G[11] = new Array('','','','','','','','','','','','','','','','','','','','');
+G[12] = new Array('','','','','','','','','','','','','','','','','','','','');
+G[13] = new Array('','','','','','','','','','','','','','','','','','','','');
+G[14] = new Array('','','','','','','','','','','','','','','','','','','','');
+G[15] = new Array('','','','','','','','','','','','','','','','','','','','');
+G[16] = new Array('','','','','','','','','','','','','','','','','','','','');
+G[17] = new Array('','','','','','','','','','','','','','','','','','','','');
+G[18] = new Array('','','','','','','','','','','','','','','','','','','','');
+G[19] = new Array('','','','','','','','','','','','','','','','','','','','');
+
+
+function CheckAnswers(){
+	if (Locked == true){return;}
+
+	var AllCorrect = true;
+	var TotLetters = 0;
+	var CorrectLetters = 0;
+	var LetterFromKey = ''; 
+	var LetterFromGuess = '';
+	
+//Check each letter
+	for (var i=0; i<L.length; i++){
+		for (var j=0; j<L[i].length; j++){
+			if (L[i][j] != ''){
+				TotLetters++;
+				if (CaseSensitive == true) {
+					LetterFromKey = L[i][j];
+					LetterFromGuess = G[i][j];
+				}
+				else {
+					LetterFromKey = L[i][j].toUpperCase();
+					LetterFromGuess = G[i][j].toUpperCase();
+				}
+				if (LetterFromGuess != LetterFromKey){ 
+					G[i][j] = '';
+//Blank that square in the grid
+					SetGridSquareValue(i,j,'');
+					AllCorrect = false;
+				}
+				else{
+					CorrectLetters++;
+				}
+			}
+		}
+	}
+
+	Score = Math.floor(((CorrectLetters-Penalties) * 100)/TotLetters);
+	if (Score < 0){Score = 0;}
+
+//Compile the output
+	var Output = '';
+
+	if (AllCorrect == true){
+		Output = Correct + '<br />';
+	}
+
+	Output += YourScoreIs + ' ' + Score + '%.<br />';
+	if (AllCorrect == false){
+		Output += Incorrect;
+		Penalties++;
+	}
+
+	ShowMessage(Output);
+	WriteToInstructions(Output);
+	
+	if ((AllCorrect == true)||(TimeOver == true)){
+
+
+		window.clearInterval(Interval);
+
+		TimeOver = true;
+		Locked = true;
+		Finished = true;
+		setTimeout('Finish()', SubmissionTimeout);
+	}
+
+}
+
+function Finish(){
+//If there's a form, fill it out and submit it
+	if (document.store != null){
+		Frm = document.store;
+		Frm.starttime.value = HPNStartTime;
+		Frm.endtime.value = (new Date()).getTime();
+		Frm.mark.value = Score;
+		Frm.submit();
+	}
+}
+
+function TypeChars(Chars){
+	if (CurrentBox != null){
+		CurrentBox.value += Chars;
+	}
+}
+
+
+function TimesUp() {
+	document.getElementById('Timer').innerHTML = 'Ihre Zeit ist vorbei!';
+
+	TimeOver = true;
+	Finished = true;
+	CheckAnswers();
+	Locked = true;
+
+}
+
+
+
+
+
+
+//CODE FOR HANDLING TIMER
+//Timer code
+var Seconds = 1800;
+var Interval = null;
+
+function StartTimer(){
+	Interval = window.setInterval('DownTime()',1000);
+	document.getElementById('TimerText').style.display = 'inline';
+}
+
+function DownTime(){
+	var ss = Seconds % 60;
+	if (ss<10){
+		ss='0' + ss + '';
+	}
+
+	var mm = Math.floor(Seconds / 60);
+
+	if (document.getElementById('Timer') == null){
+		return;
+	}
+
+	document.getElementById('TimerText').innerHTML = mm + ':' + ss;
+	if (Seconds < 1){
+		window.clearInterval(Interval);
+		TimeOver = true;
+		TimesUp();
+	}
+	Seconds--;
+}
+
+
+
+
+
+
+//-->
+
+//]]>
+
+</script>
+
+
+</head>
+
+<body onload="StartUp()" id="TheBody" >
+
+<!-- BeginTopNavButtons -->
+
+
+<div class="NavButtonBar" id="TopNavBar">
+
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)"  onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='contents.htm'; return false;"> Index </button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='nextpage.htm'; return false;">=&gt;</button>
+
+
+</div>
+
+
+
+<!-- EndTopNavButtons -->
+
+<div class="Titles">
+	<h2 class="ExerciseTitle">Schneiderlein</h2>
+
+	<h3 class="ExerciseSubtitle">Kreuzwortr&#x00E4;tsel - Mohammad Musto</h3>
+
+
+<div id="Timer"><span id="TimerText">&nbsp;&nbsp;</span></div>
+
+
+</div>
+
+<div id="InstructionsDiv" class="StdDiv">
+	<div id="Instructions">F&#x00FC;llen Sie das Kreuzwort , dann klicken Sie auf "Check" Ihre Antwort zu &#x00FC;berpr&#x00FC;fen. Wenn Sie nicht sind, k&#x00F6;nnen Sie auf "Tipp" klicken, um einen Buchstaben zu bekommen. Klicken Sie auf eine Zahl im Kreuzwort Hinweise f&#x00FC;r diese Nummer zu sehen.<br /><br /></div>
+</div>
+
+
+
+<div id="MainDiv" class="StdDiv">
+
+
+
+<div id="ClueEntry">
+
+</div>
+
+<!-- This top button is hidden; uncomment it to reveal it. -->
+<!--
+<button id="CheckButton1" class="FuncButton" onmouseover="FuncBtnOver(this)" onfocus="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onblur="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckAnswers()">&nbsp; Pr&#x00FC;fen..&nbsp;</button>
+
+ -->
+ 
+<table class="CrosswordGrid">
+<tbody>
+
+<tr id="Row_0"><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(1,0,8)">1</a><span class="NumLetterCellText" id="L_0_8" onclick="ShowClue(1,0,8)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_0_9">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_0_10">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_0_11">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_0_12">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(2,0,18)">2</a><span class="NumLetterCellText" id="L_0_18" onclick="ShowClue(2,0,18)">&nbsp;&nbsp;&nbsp;</span></td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_1"><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(3,1,3)">3</a><span class="NumLetterCellText" id="L_1_3" onclick="ShowClue(3,1,3)">&nbsp;&nbsp;&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_1_8">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(4,1,14)">4</a><span class="NumLetterCellText" id="L_1_14" onclick="ShowClue(4,1,14)">&nbsp;&nbsp;&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_1_18">&nbsp;</span></td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_2"><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(5,2,1)">5</a><span class="NumLetterCellText" id="L_2_1" onclick="ShowClue(5,2,1)">&nbsp;&nbsp;&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(6,2,3)">6</a><span class="NumLetterCellText" id="L_2_3" onclick="ShowClue(6,2,3)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_2_4">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_2_5">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_2_6">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_2_7">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_2_8">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(7,2,10)">7</a><span class="NumLetterCellText" id="L_2_10" onclick="ShowClue(7,2,10)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_2_11">&nbsp;</span></td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(8,2,12)">8</a><span class="NumLetterCellText" id="L_2_12" onclick="ShowClue(8,2,12)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_2_13">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_2_14">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_2_15">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_2_16">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_2_18">&nbsp;</span></td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_3"><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_3_1">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_3_3">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_3_8">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_3_12">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_3_14">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_3_18">&nbsp;</span></td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_4"><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(9,4,0)">9</a><span class="NumLetterCellText" id="L_4_0" onclick="ShowClue(9,4,0)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_4_1">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_4_2">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_4_3">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_4_4">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(10,4,6)">10</a><span class="NumLetterCellText" id="L_4_6" onclick="ShowClue(10,4,6)">&nbsp;&nbsp;&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(11,4,8)">11</a><span class="NumLetterCellText" id="L_4_8" onclick="ShowClue(11,4,8)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_4_9">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_4_10">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_4_11">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_4_12">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(12,4,14)">12</a><span class="NumLetterCellText" id="L_4_14" onclick="ShowClue(12,4,14)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_4_15">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_4_16">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_4_17">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_4_18">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_4_19">&nbsp;</span></td></tr><tr id="Row_5"><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_5_1">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_5_3">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_5_6">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_5_8">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_5_12">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_5_14">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_6"><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(13,6,5)">13</a><span class="NumLetterCellText" id="L_6_5" onclick="ShowClue(13,6,5)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_6_6">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_6_7">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_6_8">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(14,6,10)">14</a><span class="NumLetterCellText" id="L_6_10" onclick="ShowClue(14,6,10)">&nbsp;&nbsp;&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(15,6,14)">15</a><span class="NumLetterCellText" id="L_6_14" onclick="ShowClue(15,6,14)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_6_15">&nbsp;</span></td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(16,6,16)">16</a><span class="NumLetterCellText" id="L_6_16" onclick="ShowClue(16,6,16)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_6_17">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_6_18">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_6_19">&nbsp;</span></td></tr><tr id="Row_7"><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_7_6">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_7_10">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_7_16">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_8"><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(17,8,0)">17</a><span class="NumLetterCellText" id="L_8_0" onclick="ShowClue(17,8,0)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_8_1">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_8_2">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_8_3">&nbsp;</span></td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(18,8,4)">18</a><span class="NumLetterCellText" id="L_8_4" onclick="ShowClue(18,8,4)">&nbsp;&nbsp;&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(19,8,6)">19</a><span class="NumLetterCellText" id="L_8_6" onclick="ShowClue(19,8,6)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_8_7">&nbsp;</span></td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(20,8,8)">20</a><span class="NumLetterCellText" id="L_8_8" onclick="ShowClue(20,8,8)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_8_9">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_8_10">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_8_11">&nbsp;</span></td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(21,8,12)">21</a><span class="NumLetterCellText" id="L_8_12" onclick="ShowClue(21,8,12)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_8_13">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(22,8,15)">22</a><span class="NumLetterCellText" id="L_8_15" onclick="ShowClue(22,8,15)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_8_16">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_8_17">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_8_18">&nbsp;</span></td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_9"><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_9_4">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_9_8">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_9_10">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_9_12">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_9_16">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_10"><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(23,10,3)">23</a><span class="NumLetterCellText" id="L_10_3" onclick="ShowClue(23,10,3)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_10_4">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_10_5">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_10_6">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_10_8">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_10_12">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(24,10,15)">24</a><span class="NumLetterCellText" id="L_10_15" onclick="ShowClue(24,10,15)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_10_16">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_10_17">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_10_18">&nbsp;</span></td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_11"><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_11_4">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_11_8">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_11_12">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(25,11,14)">25</a><span class="NumLetterCellText" id="L_11_14" onclick="ShowClue(25,11,14)">&nbsp;&nbsp;&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_11_16">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_12"><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(26,12,1)">26</a><span class="NumLetterCellText" id="L_12_1" onclick="ShowClue(26,12,1)">&nbsp;&nbsp;&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(27,12,3)">27</a><span class="NumLetterCellText" id="L_12_3" onclick="ShowClue(27,12,3)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_12_4">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_12_5">&nbsp;</span></td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(28,12,6)">28</a><span class="NumLetterCellText" id="L_12_6" onclick="ShowClue(28,12,6)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_12_7">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_12_8">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_12_9">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_12_12">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_12_14">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(29,12,19)">29</a><span class="NumLetterCellText" id="L_12_19" onclick="ShowClue(29,12,19)">&nbsp;&nbsp;&nbsp;</span></td></tr><tr id="Row_13"><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_13_1">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_13_3">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_13_6">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_13_8">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(30,13,11)">30</a><span class="NumLetterCellText" id="L_13_11" onclick="ShowClue(30,13,11)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_13_12">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_13_13">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_13_14">&nbsp;</span></td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(31,13,15)">31</a><span class="NumLetterCellText" id="L_13_15" onclick="ShowClue(31,13,15)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_13_16">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_13_19">&nbsp;</span></td></tr><tr id="Row_14"><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(32,14,1)">32</a><span class="NumLetterCellText" id="L_14_1" onclick="ShowClue(32,14,1)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_14_2">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_14_3">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_14_4">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_14_6">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(33,14,10)">33</a><span class="NumLetterCellText" id="L_14_10" onclick="ShowClue(33,14,10)">&nbsp;&nbsp;&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_14_15">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_14_19">&nbsp;</span></td></tr><tr id="Row_15"><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_15_1">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_15_3">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_15_6">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(34,15,9)">34</a><span class="NumLetterCellText" id="L_15_9" onclick="ShowClue(34,15,9)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_15_10">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_15_11">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_15_12">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_15_13">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_15_14">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_15_15">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_15_19">&nbsp;</span></td></tr><tr id="Row_16"><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(35,16,0)">35</a><span class="NumLetterCellText" id="L_16_0" onclick="ShowClue(35,16,0)">&nbsp;&nbsp;&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(36,16,3)">36</a><span class="NumLetterCellText" id="L_16_3" onclick="ShowClue(36,16,3)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_16_4">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_16_5">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_16_6">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_16_7">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_16_8">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_16_10">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(37,16,15)">37</a><span class="NumLetterCellText" id="L_16_15" onclick="ShowClue(37,16,15)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_16_16">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_16_17">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_16_18">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_16_19">&nbsp;</span></td></tr><tr id="Row_17"><td class="LetterOnlyCell"><span id="L_17_0">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_17_3">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_17_10">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_17_15">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_17_19">&nbsp;</span></td></tr><tr id="Row_18"><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(38,18,0)">38</a><span class="NumLetterCellText" id="L_18_0" onclick="ShowClue(38,18,0)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_18_1">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_18_2">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_18_3">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_18_4">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_18_15">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_19"><td class="LetterOnlyCell"><span id="L_19_0">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(39,19,11)">39</a><span class="NumLetterCellText" id="L_19_11" onclick="ShowClue(39,19,11)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_19_12">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_19_13">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_19_14">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_19_15">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_19_16">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_19_17">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_19_18">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_19_19">&nbsp;</span></td></tr>
+
+</tbody>
+</table>
+
+<button id="CheckButton2" class="FuncButton" onmouseover="FuncBtnOver(this)" onfocus="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onblur="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckAnswers()">&nbsp; Pr&#x00FC;fen..&nbsp;</button>
+
+<table id="Clues">
+<tbody>
+<tr>
+<td>
+
+<table class="ClueList">
+<tbody id="CluesAcross">
+<tr><td colspan="2"><h3 class="ExerciseSubtitle" id="CluesAcrossLabel">Horizental:</h3></td></tr>
+
+<tr><td class="ClueNum">1. </td><td id="Clue_A_1" class="Clue">Substantiv, synonyme zu Stark.<br /></td></tr><tr><td class="ClueNum">6. </td><td id="Clue_A_6" class="Clue">Verb, sich ausmalen, sich ausrechnen, sich der Hoffnung hingeben, der Hoffnung sein, die Hoffnung haben.<br /></td></tr><tr><td class="ClueNum">7. </td><td id="Clue_A_7" class="Clue">Substantiv, Muslime und Juden Menschen essen dieses Tier nicht.<br /></td></tr><tr><td class="ClueNum">9. </td><td id="Clue_A_9" class="Clue">Substantiv, klein Tier mit zwei Fl&#x00FC;geln.<br /></td></tr><tr><td class="ClueNum">11. </td><td id="Clue_A_11" class="Clue">Substantiv, 1000 teil oder Einheit pro 1 Kilogramm.<br /></td></tr><tr><td class="ClueNum">12. </td><td id="Clue_A_12" class="Clue">Adjektiv, sich furchtlos , hat kein Angst von jemand oder etwas.<br /></td></tr><tr><td class="ClueNum">13. </td><td id="Clue_A_13" class="Clue">Substantiv, zum Stehen, der Mensch hat zwei von sie und das Tier hat vier.</td></tr><tr><td class="ClueNum">15. </td><td id="Clue_A_15" class="Clue">Substantiv, etwas das man riecht.</td></tr><tr><td class="ClueNum">17. </td><td id="Clue_A_17" class="Clue">Substantiv, jemand, der auf die Jagd geht.<br /></td></tr><tr><td class="ClueNum">19. </td><td id="Clue_A_19" class="Clue">Substantiv, jemand ,der eine Nachricht vom K&#x00F6;nig tr&#x00E4;gt, Der...<br /></td></tr><tr><td class="ClueNum">22. </td><td id="Clue_A_22" class="Clue">Substantiv, die Erde umgebender, Der Status des gasf&#x00F6;rmigen Materials enth&#x00E4;lt viele Elemente, den Mensch und Tier zum Atmen brauchen</td></tr><tr><td class="ClueNum">23. </td><td id="Clue_A_23" class="Clue">Substantiv, synonyme zu Recke , Heroe. <br /></td></tr><tr><td class="ClueNum">24. </td><td id="Clue_A_24" class="Clue">Substantiv, synonyme zu K&#x00F6;rper<br /></td></tr><tr><td class="ClueNum">27. </td><td id="Clue_A_27" class="Clue">Substantiv, Man macht dieses Ding auf,um frisch Luft zu haben, ein Teil des Geb&#x00E4;udes ist f&#x00FC;r die Bel&#x00FC;ftung oder Sonnenlicht verwendet.</td></tr><tr><td class="ClueNum">30. </td><td id="Clue_A_30" class="Clue">Substantiv, jemand, der reitet, (fr&#x00FC;her) berittener Soldat, Kavallerist.</td></tr><tr><td class="ClueNum">32. </td><td id="Clue_A_32" class="Clue">Substantiv, ein rundes St&#x00FC;ck Brot.<br /></td></tr><tr><td class="ClueNum">34. </td><td id="Clue_A_34" class="Clue">Substantiv, Synonyme zu Begleiter, Begleiterin, Freund, Freundin, Genosse, Genossin, Kompagnon, Schulfreund, Schulfreundin.<br /></td></tr><tr><td class="ClueNum">36. </td><td id="Clue_A_36" class="Clue">Substantiv, festes Band [aus Leder], das&#x2002;, vorn mit einer Schnalle geschlossen&#x2002;, um Taille oder H&#x00FC;fte getragen wird.<br /></td></tr><tr><td class="ClueNum">37. </td><td id="Clue_A_37" class="Clue">Substantiv, Stimmung, augenblickliche Gem&#x00FC;tsverfassung. wenn man gleiche fall hat, m&#x00F6;chte er nicht mehr denken.<br /></td></tr><tr><td class="ClueNum">38. </td><td id="Clue_A_38" class="Clue">Substantiv, eine alte Gewichtseinheit in Anderen l&#x00E4;nder, einhalbes Kilogramm.<br /></td></tr><tr><td class="ClueNum">39. </td><td id="Clue_A_39" class="Clue">Substantiv, synonyme zu beherzt, couragiert, heroisch, k&#x00FC;hn, mutig.<br /></td></tr>
+
+</tbody>
+</table>
+
+</td>
+
+<td>
+
+<table class="ClueList">
+<tbody id="CluesDown">
+<tr><td colspan="2"><h3 class="ExerciseSubtitle" id="CluesDownLabel">Vertikal:</h3></td></tr>
+
+<tr><td class="ClueNum">1. </td><td id="Clue_D_1" class="Clue">Substantiv, feminin von K&#x00F6;nig.<br /></td></tr><tr><td class="ClueNum">2. </td><td id="Clue_D_2" class="Clue">Substantiv, gr&#x00F6;&#x00DF;erer hohler Raum, Hohlraum besonders im Gestein oder in der Erde<br /></td></tr><tr><td class="ClueNum">3. </td><td id="Clue_D_3" class="Clue">Substantiv, Man verwendet sie um zu h&#x00F6;ren,<br /></td></tr><tr><td class="ClueNum">4. </td><td id="Clue_D_4" class="Clue">Adektiv, so weit, dass nichts mehr zu tun &#x00FC;brig bleibt, zu Ende</td></tr><tr><td class="ClueNum">5. </td><td id="Clue_D_5" class="Clue">Substantiv, aus Mehl, Wasser, Salz und Sauerteig oder Hefe durch Backen hergestellte Backware, die als Grundnahrungsmittel gilt.</td></tr><tr><td class="ClueNum">8. </td><td id="Clue_D_8" class="Clue">Substantiv, besonders fr&#x00FC;her &#x00FC;ber den Kopf gezogenes, weit geschnittenes, Kleidungsst&#x00FC;ck mit &#x00C4;rmeln.</td></tr><tr><td class="ClueNum">10. </td><td id="Clue_D_10" class="Clue">Substantiv, Kleiner Mensch.<br /></td></tr><tr><td class="ClueNum">14. </td><td id="Clue_D_14" class="Clue">Substantiv, Synonyme zu Total.</td></tr><tr><td class="ClueNum">16. </td><td id="Clue_D_16" class="Clue">Verb,Geld nehmen oder etwas illegal.</td></tr><tr><td class="ClueNum">18. </td><td id="Clue_D_18" class="Clue">Substantiv, Gro&#x00DF;e Mensch . Synonyme zu Gigant, Gigantin und Titan.<br /></td></tr><tr><td class="ClueNum">20. </td><td id="Clue_D_20" class="Clue">Adjektiv, Nicht einfach.<br /></td></tr><tr><td class="ClueNum">21. </td><td id="Clue_D_21" class="Clue">Substantiv, etwas, was meist aus flexiblem Material hergestellt ist, meist einen oder zwei Henkel oder einen Tragegriff hat und zum Unterbringen von Dingen bestimmt ist, die jemand bei sich tragen m&#x00F6;chte.</td></tr><tr><td class="ClueNum">25. </td><td id="Clue_D_25" class="Clue">Substantiv, werkzeug mit schm&#x00E4;ler Schneide und langem Stiel, besonders zum F&#x00E4;llen von B&#x00E4;umen.<br /></td></tr><tr><td class="ClueNum">26. </td><td id="Clue_D_26" class="Clue">Substantiv, Menschen oder Leute, die in einem land leben.<br /></td></tr><tr><td class="ClueNum">27. </td><td id="Clue_D_27" class="Clue">Verb, Von Punkt A zum Punkt B mit dem Flugzeug.<br /></td></tr><tr><td class="ClueNum">28. </td><td id="Clue_D_28" class="Clue">Substantiv, ein Ort, wo die Menschen leben gr&#x00F6;&#x00DF;er als das Dorf.<br /></td></tr><tr><td class="ClueNum">29. </td><td id="Clue_D_29" class="Clue">Substantiv, das &#x00C4;u&#x00DF;erste, H&#x00F6;hepunkt, h&#x00F6;chster Punkt eines Bergs.</td></tr><tr><td class="ClueNum">31. </td><td id="Clue_D_31" class="Clue">Adverb, schlie&#x00DF;lich, zuletzt, am Ende.<br /></td></tr><tr><td class="ClueNum">33. </td><td id="Clue_D_33" class="Clue">Substantiv, etwas, was gehandelt, verkauft oder getauscht wird; Handelsgut.<br /></td></tr><tr><td class="ClueNum">35. </td><td id="Clue_D_35" class="Clue">Substantiv, eine gro&#x00DF;artige Sache verwendet in der K&#x00FC;che.<br /></td></tr>
+
+</tbody>
+</table>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+
+<div class="Feedback" id="FeedbackDiv">
+<div class="FeedbackText" id="FeedbackContent"></div>
+<button id="FeedbackOKButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="HideFeedback(); return false;">&nbsp;OK&nbsp;</button>
+</div>
+
+<!-- BeginBottomNavButtons -->
+
+
+<div class="NavButtonBar" id="BottomNavBar">
+
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)"  onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='contents.htm'; return false;"> Index </button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='nextpage.htm'; return false;">=&gt;</button>
+
+
+</div>
+
+
+
+<!-- EndBottomNavButtons -->
+
+<!-- BeginSubmissionForm -->
+
+<!-- EndSubmissionForm -->
+
+</body>
+
+</html>
