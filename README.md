@@ -3,4 +3,4 @@ CrossWord Schneiderlein in German
 
 
 
-![](Images)
+![](Images/CoverPhotoCrossWord-Schneiderlein-De.png)
