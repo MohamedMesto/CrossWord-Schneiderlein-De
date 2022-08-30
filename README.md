@@ -12,7 +12,7 @@
 </tr>
   <tr>
     <td> </td>
-<td align="center"><h5><a href="">"Architect Crossword"</a></h5></td>
+<td align="center"><h5><a href="">"Schneiderlein Crossword"</a></h5></td>
     <td> </td>
 </tr>
   <tr>
