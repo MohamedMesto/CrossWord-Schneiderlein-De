@@ -34,3 +34,4 @@ DreamWaver, HTML, CSS and JS (internal)
 
 
 ![](Images/CoverPhotoCrossWord-Schneiderlein-De.png)
+![](Images/CW-schneiderlein.png)
